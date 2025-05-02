@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화검색</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <h1>보고싶은 영화를 마음껏 찾기!</h1>
+    <div class="searchbar"><input class="searchbar" type="text" placeholder="궁금한 영화를 찾아보세요!!">
+        <button>검색</button>
+    </div>
+    <div id = "top-movies">
+        <h2>인기영화 TOP 3</h2>
+        <div class="top-movies">
+            <div class="movie-card" id = "rank1">
+                <div class="img-box" ><img class="img" src="" alt="1위 포스터"></div>
+                <h3 class = "movie-title">1위 영화 제목</h3>
+                <p class="rating">평점</p>
+
+            </div>
+            <div class="movie-card" id = "rank2">
+                <div class="img-box" ><img class="img" src="" alt="2위 포스터"></div>
+                <h3 class = "movie-title">2위 영화 제목</h3>
+                <p class="rating">평점</p>
+            
+            </div>
+            <div class="movie-card" id = "rank3">
+                <div class="img-box" ><img class="img" src="" alt="3위 포스터"></div>
+                <h3 class = "movie-title">3위 영화 제목</h3>
+                <p class="rating">평점</p>
+            
+            </div>
+        </div>            
+    </div>
+    
+
+
+    <div class = "movie-list">
+    </div>
+
+    <div class="movie-card" id="movie-template" style="display: none;">
+        <div class="img-box" ><img class="img2" src="" alt="포스터"></div>
+        <h3 class="movie-title">제목</h3>
+        <div class="rating">평점</div>
+    </div>
+
+    <div id="movie-detail-modal" class="modal" style="display: none">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="detail-image"><img class = "img3" id = "detail-img" src="" alt="포스터"></div>
+            <h3 id = "detail-title"></h3>
+            <p id = "detail-rating"></p>
+            <p id = "detail-release"></p>
+            <p id = "detail-overview"></p>
+        </div>
+    </div>
+<script src="mymovie.js"></script>
+</body>
+<foorer>
+    <P>@2025 copyright By ES</P>
+</foorer>
+</html>
